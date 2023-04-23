@@ -5,6 +5,7 @@ class SidebarXItem {
     this.label,
     this.icon,
     this.iconWidget,
+    this.iconSelectedWidget,
     this.onTap,
   }) : assert(
           (icon != null || iconWidget != null) &&
@@ -15,5 +16,6 @@ class SidebarXItem {
   final String? label;
   final IconData? icon;
   final Widget? iconWidget;
+  final Widget? iconSelectedWidget;
   final Function()? onTap;
 }
